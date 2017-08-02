@@ -12,4 +12,7 @@ export class SliderMainComponent implements OnInit {
   ngOnInit() {
   }
 
+  images = ['slider1.jpg', 'slider2.jpg', 'slider3.jpg', 'slider4.jpg'];
+
+
 }

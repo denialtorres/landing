@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
+import { OwlModule } from 'ngx-owl-carousel';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -12,6 +14,7 @@ import { DesignSectionComponent } from './design-section/design-section.componen
 import { LocationSectionComponent } from './location-section/location-section.component';
 import { FooterComponent } from './footer/footer.component';
 import { AmenitiesComponent } from './amenities/amenities.component';
+import { MoreInfoComponent } from './more-info/more-info.component';
 
 @NgModule({
   declarations: [
@@ -22,12 +25,15 @@ import { AmenitiesComponent } from './amenities/amenities.component';
     DesignSectionComponent,
     LocationSectionComponent,
     FooterComponent,
-    AmenitiesComponent
+    AmenitiesComponent,
+    MoreInfoComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    OwlModule
   ],
   providers: [],
   bootstrap: [AppComponent]

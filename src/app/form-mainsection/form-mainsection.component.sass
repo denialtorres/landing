@@ -1,0 +1,68 @@
+$information-phone: "screen and (min-width : 0px)"
+$information-phone-small: "screen and (min-width : 576px)"
+$information-tablets: "screen and (min-width : 768px)"
+$information-desktop: "screen and (min-width : 992px)"
+$information-desktop-lg: "screen and (min-width : 1200px)"
+
+
+.contact
+  background-color: #005967
+  .formdepa
+    height: 60px
+    position: relative
+    z-index: 1
+    .container
+      position: relative
+    .contact
+      position: absolute
+      right: 0
+      bottom: 50%
+      text-align: center
+      background-color: #fff
+      -webkit-box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.2)
+      -moz-box-shadow:    0px 6px 12px 0px rgba(0, 0, 0, 0.2)
+      box-shadow:         0px 6px 12px 0px rgba(0, 0, 0, 0.2)
+      max-width: 480px
+      padding: 10px 30px 50px 30px
+      h3
+        font-size: 24px
+        color: #3a3b3c
+        text-transform: uppercase
+      h2
+        font-size: 60px
+        color: #005967
+        text-transform: uppercase
+      p
+        margin-top: 30px
+      input
+        font-size: 16px
+      button
+        font-size: 18px
+        font-weight: 300
+
+
+
+
+@media #{$information-phone}
+  .contact
+    padding: 40px 0
+    .formdepa
+      height: auto
+      .contact
+          position: relative
+          margin: 0 auto
+
+@media #{$information-tablets}
+  .contact
+    .formdepa
+      height: auto
+      .contact
+          position: relative
+
+@media #{$information-desktop}
+  .contact
+    padding: 0px 0
+    .formdepa
+      height: 60px
+      .contact
+          position: absolute

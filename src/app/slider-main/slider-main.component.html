@@ -1,3 +1,26 @@
-<p>
-  slider-main works!
-</p>
+<section class="mainsection">
+  <div class="call">
+    <a href="tel:+3310854239">
+      <i class="fa fa-phone" aria-hidden="true"></i>
+      <b>33 1085 4239</b> · De 9:00 a 2:00 y 4:00 a 7:00
+    </a>
+  </div>
+  <owl-carousel id="owl-slide1"
+       [options]="{items: 1, autoplay: true, mouseDrag: false ,loop:true, dots: false, navigation: false, animateOut: 'fadeOut', animateIn: 'fadeIn'}"
+       [class]="['owl-slide1']">
+       <!-- <div class="item" *ngFor="let img of images"  [ngStyle]="{background-image:/assets/images/slider/slider{{img}}.jpg;">
+       </div> -->
+       <div class="item" *ngFor="let img of images" [ngStyle]="{'background-image': 'url(../assets/images/slider/' + img +')'}">
+         <div class="whitebackground"></div>
+         <div class="logo">
+              <img src="/assets/images/logo_punta_alta.png" alt="logo" class="img-responsive">
+         </div>
+         <div class="title">
+            <h2>
+              ÁREAS VERDES & SOCIAL ROOF
+            </h2>
+         </div>
+       </div>
+   </owl-carousel>
+
+</section>

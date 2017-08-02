@@ -1,0 +1,83 @@
+@mixin icobk
+  position: absolute
+  content: ""
+  width: 30px
+  height: 35px
+  left: 0px
+  background-repeat: no-repeat
+.nomargin
+  margin: 0
+  padding: 0
+.titles
+    padding: 42px
+    text-align: center
+    background-color: #000000
+    h2
+      color: #fff
+      font-size: 36px
+      font-weight: 700
+.location-place
+  min-height: 400px
+  width: 100%
+  background-image: url('/assets/images/map.jpg')
+  background-position: center
+  background-repeat: no-repeat
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+
+.item
+  height: 480px
+  flex: 1
+  display: flex
+  /* content styling OPTIONAL*/
+  align-items: center
+  justify-content: center
+  padding: 10vh
+  /* background styling */
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+
+
+.amenities
+  .list
+    padding: 30px
+    max-width: 95%
+    margin: 45px auto
+    .href-button
+      margin-top: 40px
+.list-designer
+  position: relative
+  li
+    list-style: none
+    display: block
+    height: 40px
+    margin-bottom: 10px
+    span
+      position: relative
+      top: 5px
+      font-size: 20px
+      font-weight: 300
+
+  li:nth-child(1)::before
+    background-image: url('/assets/images/icos3.jpg')
+    @include icobk
+    background-position: 0 0
+  li:nth-child(2)::before
+    background-image: url('/assets/images/icos3.jpg')
+    @include icobk
+    background-position: 0 -54px
+  li:nth-child(3)::before
+    background-image: url('/assets/images/icos3.jpg')
+    @include icobk
+    background-position: 0 -98px
+  li:nth-child(4)::before
+    background-image: url('/assets/images/icos3.jpg')
+    @include icobk
+    background-position: 0 -149px
+  li:nth-child(5)::before
+    background-image: url('/assets/images/icos3.jpg')
+    @include icobk
+    background-position: 0 -200px

@@ -1,0 +1,109 @@
+$information-phone: "screen and (min-width : 0px)"
+$information-phone-small: "screen and (min-width : 576px)"
+$information-tablets: "screen and (min-width : 768px)"
+$information-desktop: "screen and (min-width : 992px)"
+$information-desktop-lg: "screen and (min-width : 1200px)"
+
+@mixin bkcover
+  background-position: center
+  background-repeat: no-repeat
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+
+.mainsection
+  position: relative
+.call
+  position: absolute
+  top: 0
+  z-index: 10
+  display: block
+  text-align: right
+  width: 100%
+  a
+    color: #3a3b3c
+    font-size: 16px
+    text-decoration: none
+    position: relative
+    padding: 2% 6%
+    display: block
+
+.item
+  height: 100vh
+  flex: 1
+  display: flex
+  /* content styling OPTIONAL*/
+  align-items: center
+  justify-content: center
+  padding: 10vh
+  /* background styling */
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  .whitebackground
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,000000+100 */
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    position: absolute
+    top: 0
+    height: 300px
+    width: 100%
+
+  .logo
+    max-width: 34%
+    position: absolute
+    top: 10%
+    left: 10%
+    display: block
+  .title
+    position: absolute
+    top: 40%
+    left: 10%
+
+    h2
+      font-size: 60px
+      color: #fff
+      text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5)
+      text-align: center
+      max-width: 480px
+
+
+
+@media #{$information-phone}
+  .item
+    .logo
+      max-width: 75%
+      position: absolute
+      top: 10%
+      left: auto
+      display: block
+    .title
+      font-size: 60px
+      color: #fff
+      text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5)
+      text-align: center
+      max-width: 400px
+
+@media #{$information-tablets}
+  .item
+    .logo
+      max-width: 34%
+      position: absolute
+      top: 10%
+      left: 10%
+      display: block
+
+@media #{$information-desktop}
+
+@media #{$information-desktop-lg}
+  .item
+    .title
+      font-size: 60px
+      color: #fff
+      text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5)
+      text-align: center
+      max-width: 480px

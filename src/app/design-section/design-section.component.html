@@ -1,3 +1,38 @@
-<p>
-  design-section works!
-</p>
+<section class="design">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="titles">
+        <h2>ELEGANTE DISEÑO Y ACABADOS SUPERIORES</h2>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-lg-8 col-xs-12">
+          <owl-carousel id="design-carousel"
+               [options]="{items: 1, autoplay: true, mouseDrag: false ,loop:true, dots: true, navigation: true, animateOut: 'fadeOut', animateIn: 'fadeIn'}"
+               [class]="['owl-slide2']">
+               <div class="item" *ngFor="let img of images" [ngStyle]="{'background-image': 'url(../assets/images/design/' + img +')'}">
+
+               </div>
+           </owl-carousel>
+
+        </div>
+        <div class="col-md-4 col-lg-4 col-xs-12">
+            <div class="list">
+                <ul class="list-designer">
+                  <li><span>Desde 57 m2 a 60.8 m2 (balcón)</span></li>
+                  <li><span>2 Habitaciones</span></li>
+                  <li><span>Sala</span></li>
+                  <li><span>Comedor</span></li>
+                  <li><span>Cocina</span></li>
+                  <li><span>Baño</span></li>
+                  <li><span>Área de lavado</span></li>
+                </ul>
+                <div class="href-button">
+                  <a href="#" class="btn btn-default btn-block">QUIERO VIVIR AQUÍ</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  </div>
+</section>
