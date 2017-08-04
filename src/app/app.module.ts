@@ -1,10 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HttpModule } from '@angular/http';
-import { FormsModule } from '@angular/forms';
 import { OwlModule } from 'ngx-owl-carousel';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpModule } from '@angular/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -33,7 +33,8 @@ import { MoreInfoComponent } from './more-info/more-info.component';
     BrowserAnimationsModule,
     FormsModule,
     HttpModule,
-    OwlModule
+    OwlModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
