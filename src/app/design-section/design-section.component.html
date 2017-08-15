@@ -5,13 +5,15 @@
         <h2>ELEGANTE DISEÑO Y ACABADOS SUPERIORES</h2>
       </div>
     </div>
+  </div>
+  <div class="container">
     <div class="row">
-        <div class="col-md-8 col-lg-8 col-xs-12">
+        <div class="col-md-8 col-lg-8 col-xs-12 no-margin">
           <owl-carousel id="design-carousel"
                [options]="{items: 1, autoplay: true, mouseDrag: false ,loop:true, dots: true, navigation: true, animateOut: 'fadeOut', animateIn: 'fadeIn'}"
                [class]="['owl-slide2']">
-               <div class="item" *ngFor="let img of images" [ngStyle]="{'background-image': 'url(assets/images/design/' + img +')'}">
-
+               <div class="item" *ngFor="let img of images" >
+                 <img src="assets/images/design/{{img}}" alt="Diseño elegante" class="img-responsive">
                </div>
            </owl-carousel>
 

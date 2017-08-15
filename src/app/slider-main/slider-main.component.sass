@@ -3,6 +3,7 @@ $information-phone-small: "screen and (min-width : 576px)"
 $information-tablets: "screen and (min-width : 768px)"
 $information-desktop: "screen and (min-width : 992px)"
 $information-desktop-lg: "screen and (min-width : 1200px)"
+@import '../../assets/variables.sass'
 
 @mixin bkcover
   background-position: center
@@ -28,7 +29,10 @@ $information-desktop-lg: "screen and (min-width : 1200px)"
     position: relative
     padding: 2% 6%
     display: block
-
+  .callme
+    font-size: 26px
+    font-weight: 500
+    text-transform: uppercase
 .item
   height: 100vh
   flex: 1
@@ -55,14 +59,16 @@ $information-desktop-lg: "screen and (min-width : 1200px)"
 
   .logo
     max-width: 34%
-    position: absolute
+    position: relative
     top: 10%
     left: 10%
     display: block
   .title
-    position: absolute
+    position: relative
     top: 40%
     left: 10%
+    margin-left: 0%
+    margin-top: 6%
 
     h2
       font-size: 60px
@@ -75,35 +81,49 @@ $information-desktop-lg: "screen and (min-width : 1200px)"
 
 @media #{$information-phone}
   .item
+    padding: 0vh
+    height: 520px
     .logo
       max-width: 75%
-      position: absolute
+      position: relative
       top: 10%
       left: auto
       display: block
-    .title
-      font-size: 60px
-      color: #fff
-      text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5)
       text-align: center
-      max-width: 400px
+      margin: 0 auto
+    .title
+      left: inherit
+      h2
+        font-size: 40px
 
 @media #{$information-tablets}
   .item
+    height: 100vh
     .logo
       max-width: 34%
-      position: absolute
+      position: relative
       top: 10%
-      left: 10%
+      left: inherit
       display: block
+    .title
+        h2
+          font-size: 50px
+          margin: 0 auto
 
 @media #{$information-desktop}
+  .item
+    .logo
+      margin-left: 10%
+    .title
+      h2
+        font-size: 50px
+        margin-left: 0
 
 @media #{$information-desktop-lg}
   .item
+    .logo
+      margin-left: 10%
     .title
-      font-size: 60px
-      color: #fff
-      text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5)
-      text-align: center
-      max-width: 480px
+      h2
+        font-size: 60px
+        margin-left: 0

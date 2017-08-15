@@ -1,3 +1,5 @@
+@import '../../assets/variables.sass'
+
 @mixin icobk
   position: absolute
   content: ""
@@ -8,24 +10,15 @@
 .titles
     padding: 42px
     text-align: center
-    background-color: #000000
+    background-color: $bar-black
     h2
       color: #fff
       font-size: 36px
       font-weight: 700
+.no-margin
+  margin: 0
+  padding: 0
 #design-carousel
-  .item
-    height: 500px
-    flex: 1
-    display: flex
-    /* content styling OPTIONAL*/
-    align-items: center
-    justify-content: center
-    padding: 10vh
-    /* background styling */
-    background-size: cover
-    background-position: center
-    background-repeat: no-repeat
 .list
   padding: 30px 0px 30px 30px
   margin-top: 45px
@@ -36,7 +29,7 @@
   li
     list-style: none
     display: block
-    height: 40px
+    margin-bottom: 15px
     span
       position: relative
       top: 5px

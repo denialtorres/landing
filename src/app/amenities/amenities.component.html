@@ -5,6 +5,10 @@
         <h2>ÁREAS VERDES Y AMENIDADES </h2>
       </div>
     </div>
+
+  </div>
+  <div class="container">
+
      <div class="row">
          <div class="col-md-8 col-lg-8 col-xs-12 nomargin">
            <owl-carousel id="owl-slide3"
@@ -12,8 +16,8 @@
                 [class]="['owl-slide3']">
                 <!-- <div class="item" *ngFor="let img of images"  [ngStyle]="{background-image:/assets/images/slider/slider{{img}}.jpg;">
                 </div> -->
-                <div class="item" *ngFor="let img of images" [ngStyle]="{'background-image': 'url(assets/images/amenities/' + img +')'}">
-
+                <div class="item" *ngFor="let img of images">
+                    <img src="assets/images/design/{{img}}" alt="Diseño eleganteÁREAS VERDES Y AMENIDADES" class="img-responsive">
                 </div>
             </owl-carousel>
          </div>
