@@ -1,8 +1,3 @@
-$information-phone: "screen and (min-width : 0px)"
-$information-phone-small: "screen and (min-width : 576px)"
-$information-tablets: "screen and (min-width : 768px)"
-$information-desktop: "screen and (min-width : 992px)"
-$information-desktop-lg: "screen and (min-width : 1200px)"
 @import '../../assets/variables.sass'
 
 @mixin bkcover
@@ -91,10 +86,14 @@ $information-desktop-lg: "screen and (min-width : 1200px)"
       display: block
       text-align: center
       margin: 0 auto
+      img
+        max-width: 50%
+        margin: 0 auto
     .title
       left: inherit
       h2
         font-size: 40px
+        margin: 0 auto
 
 @media #{$information-tablets}
   .item
@@ -105,6 +104,9 @@ $information-desktop-lg: "screen and (min-width : 1200px)"
       top: 10%
       left: inherit
       display: block
+      img
+        max-width: 100%
+        margin: 0 auto
     .title
         h2
           font-size: 50px
