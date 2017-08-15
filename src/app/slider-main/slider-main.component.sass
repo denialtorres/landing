@@ -30,7 +30,7 @@ $information-desktop-lg: "screen and (min-width : 1200px)"
     padding: 2% 6%
     display: block
   .callme
-    font-size: 26px
+    font-size: 20px
     font-weight: 500
     text-transform: uppercase
 .item
@@ -46,12 +46,12 @@ $information-desktop-lg: "screen and (min-width : 1200px)"
   background-position: center
   background-repeat: no-repeat
   .whitebackground
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,000000+100 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$color-whitefff+0,000000+100 */
     background: rgb(255,255,255); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-whitefff', endColorstr='$color-whitefff',GradientType=0 ); /* IE6-9 */
     position: absolute
     top: 0
     height: 300px
@@ -72,7 +72,7 @@ $information-desktop-lg: "screen and (min-width : 1200px)"
 
     h2
       font-size: 60px
-      color: #fff
+      color: $color-white
       text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5)
       text-align: center
       max-width: 480px
@@ -114,6 +114,7 @@ $information-desktop-lg: "screen and (min-width : 1200px)"
   .item
     .logo
       margin-left: 10%
+      top: -50px
     .title
       h2
         font-size: 50px

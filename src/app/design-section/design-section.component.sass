@@ -12,7 +12,7 @@
     text-align: center
     background-color: $bar-black
     h2
-      color: #fff
+      color: $color-white
       font-size: 36px
       font-weight: 700
 .no-margin
@@ -68,3 +68,15 @@
     background-image: url('images/icos.jpg')
     @include icobk
     background-position: 0 -350px
+
+
+
+
+@media #{$information-phone}
+  .list
+    margin-top: 0px
+@media #{$information-tablets}
+  .list
+    margin-top: 45px
+
+@media #{$information-desktop}

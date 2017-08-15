@@ -1,7 +1,7 @@
 @import '../../assets/variables.sass'
 
 .navbar
-  background-color: #fff
+  background-color: $color-white
   min-height: 80px
   display: flex
   align-items: center
@@ -20,6 +20,34 @@
     padding: 2% 6%
     display: block
   .callme
-    font-size: 32px
+    font-size: 17px
     font-weight: 500
     text-transform: uppercase
+
+
+
+
+@media #{$information-phone}
+  .menu-main
+    width: 100%
+  .main-nav
+    width: 130px
+  .navbar-header
+    float: left
+  .main-nav
+    float: right
+@media #{$information-tablets}
+  .main-nav
+    display: inline-block
+    width: initial
+  .mainmenu a
+    padding: 0
+  .navbar-nav
+    float: left
+    margin: 0
+    margin-left: -13%
+    margin-top: 5%
+
+
+
+@media #{$information-desktop}

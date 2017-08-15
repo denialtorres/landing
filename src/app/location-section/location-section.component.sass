@@ -25,7 +25,6 @@
   .list
     padding: 30px
     max-width: 90%
-    margin: 45px auto
     margin-bottom: 0
     .href-button
       margin-top: 40px
@@ -53,3 +52,13 @@
     background-image: url('images/icos2.jpg')
     @include icobk
     background-position: 0 -100px
+
+
+@media #{$information-phone}
+  .list
+    margin-top: 0px
+@media #{$information-tablets}
+  .list
+    margin-top: 45px
+
+@media #{$information-desktop}
