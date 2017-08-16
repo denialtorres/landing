@@ -11,31 +11,17 @@
   margin: 0
   padding: 0
 .titles
-    padding: 42px
+    padding: 42px 10px
     text-align: center
     background-color: $bar-black
     h2
-      color: #fff
+      color: $color-white
       font-size: 36px
       font-weight: 700
-.item
-  height: 480px
-  flex: 1
-  display: flex
-  /* content styling OPTIONAL*/
-  align-items: center
-  justify-content: center
-  padding: 10vh
-  /* background styling */
-  background-size: cover
-  background-position: center
-  background-repeat: no-repeat
-
 .amenities
   .list
     padding: 30px
-    max-width: 95%
-    margin: 45px auto
+    max-width: 100%
     .href-button
       margin-top: 40px
 .list-designer
@@ -70,3 +56,18 @@
     background-image: url('images/icos3.jpg')
     @include icobk
     background-position: 0 -200px
+
+
+@media #{$information-phone}
+  .list
+    margin-top: 0px
+  .titles
+    h2
+      font-size: 30px
+@media #{$information-tablets}
+  .list
+  .titles
+    h2
+      font-size: 36px
+
+@media #{$information-desktop}

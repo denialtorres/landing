@@ -8,11 +8,11 @@
   left: 0
   background-repeat: no-repeat
 .titles
-    padding: 42px
+    padding: 42px 10px
     text-align: center
     background-color: $bar-black
     h2
-      color: #fff
+      color: $color-white
       font-size: 36px
       font-weight: 700
 .no-margin
@@ -20,8 +20,9 @@
   padding: 0
 #design-carousel
 .list
-  padding: 30px 0px 30px 30px
-  margin-top: 45px
+  padding: 30px
+  max-width: 100%
+  margin-bottom: 0
   .href-button
     margin-top: 40px
 .list-designer
@@ -68,3 +69,23 @@
     background-image: url('images/icos.jpg')
     @include icobk
     background-position: 0 -350px
+
+
+
+
+@media #{$information-phone}
+  .list
+    margin-top: 0px
+  .titles
+    h2
+      font-size: 30px
+@media #{$information-tablets}
+  .titles
+    h2
+      font-size: 36px
+
+@media #{$information-desktop}
+
+@media #{information-desktop-lg}
+  .list
+    margin-top: 45px

@@ -10,11 +10,9 @@
     </a>
   </div>
   <owl-carousel id="owl-slide1"
-       [options]="{items: 1, autoplay: false, mouseDrag: false ,loop:true, dots: false, navigation: false, animateOut: 'fadeOut', animateIn: 'fadeIn'}"
+       [options]="{items: 1, autoplay: true, mouseDrag: false ,loop:true, dots: false, navigation: false, animateOut: 'fadeOut', animateIn: 'fadeIn'}"
        [class]="['owl-slide1']">
-       <!-- <div class="item" *ngFor="let img of images"  [ngStyle]="{background-image:/assets/images/slider/slider{{img}}.jpg;">
-       </div> -->
-       <div class="item" *ngFor="let img of images" [ngStyle]="{'background-image': 'url(assets/images/slider/' + img +')'}">
+       <div class="item" *ngFor="let img of images" [ngStyle]="{'background-image': 'url(assets/images/slider/main/' + img +')'}">
          <div class="whitebackground"></div>
             <div class="container">
              <div class="row">
