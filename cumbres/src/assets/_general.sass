@@ -1,0 +1,39 @@
+
+@mixin bkcover
+  background-position: center
+  background-repeat: no-repeat
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+
+@mixin bkcontainer
+  background-position: center
+  background-repeat: no-repeat
+  -webkit-background-size: contain
+  -moz-background-size: contain
+  -o-background-size: contain
+  background-size: contain
+
+html,body
+  height: 100%
+  margin: 0px
+  padding: 0px
+
+.btn-default, .btn
+  padding: 5px
+  border-radius: $border-radius-base
+
+#design-carousel
+  .owl-dots
+    padding: 15px
+    text-align: center
+    .owl-dot
+      background-color: #d3d3d3
+      width: 10px
+      height: 10px
+      border-radius: 15px
+      display: inline-block
+      margin: 0 5px
+    .active
+      background-color: #79c253
