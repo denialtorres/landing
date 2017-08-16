@@ -11,7 +11,7 @@
   margin: 0
   padding: 0
 .titles
-    padding: 42px
+    padding: 42px 10px
     text-align: center
     background-color: $bar-black
     h2
@@ -24,7 +24,7 @@
         float: right
   .list
     padding: 30px
-    max-width: 90%
+    max-width: 100%
     margin-bottom: 0
     .href-button
       margin-top: 40px
@@ -57,8 +57,16 @@
 @media #{$information-phone}
   .list
     margin-top: 0px
+  .titles
+    h2
+      font-size: 30px
 @media #{$information-tablets}
-  .list
-    margin-top: 45px
+  .titles
+    h2
+      font-size: 36px
 
 @media #{$information-desktop}
+
+@media #{information-desktop-lg}
+  .list
+    margin-top: 45px
