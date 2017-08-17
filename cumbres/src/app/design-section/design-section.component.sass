@@ -1,0 +1,111 @@
+@import '../../assets/variables.sass'
+
+@mixin icobk
+  position: absolute
+  content: ""
+  width: 30px
+  height: 30px
+  left: 0
+  background-repeat: no-repeat
+.titles
+    padding: 42px 10px
+    text-align: center
+    background-color: $bar-black
+    h2
+      color: $color-white
+      font-size: 36px
+      font-weight: 700
+.no-margin
+  margin: 0
+  padding: 0
+#design-carousel
+.list
+  padding: 30px
+  max-width: 100%
+  margin-bottom: 0
+  .href-button
+    margin-top: 40px
+.list-designer
+  position: relative
+  li
+    list-style: none
+    display: block
+    margin-bottom: 15px
+    span
+      position: relative
+      top: 5px
+      font-size: 20px
+      font-weight: 300
+
+  li:nth-child(1)::before
+    background-image: url('images/icos.jpg')
+    @include icobk
+    background-position: -186px -60px
+    background-size: 224px
+
+
+  li:nth-child(2)::before
+    background-image: url('images/icos.jpg')
+    @include icobk
+    background-position: 2px -31px
+    background-size: 224px
+
+
+  li:nth-child(3)::before
+    background-image: url('images/icos.jpg')
+    @include icobk
+    background-position: -79px -1px
+    background-size: 224px
+
+
+  li:nth-child(4)::before
+    background-image: url('images/icos.jpg')
+    @include icobk
+    background-position: -79px -28px
+    background-size: 224px
+
+
+  li:nth-child(5)::before
+    background-image: url('images/icos.jpg')
+    @include icobk
+    background-position: -114px -62px
+    background-size: 224px
+
+
+  li:nth-child(6)::before
+    background-image: url('images/icos.jpg')
+    @include icobk
+    background-position: -0px -62px
+    background-size: 224px
+
+  li:nth-child(7)::before
+    background-image: url('images/icos.jpg')
+    @include icobk
+    background-position: -151px 0px
+    background-size: 224px
+
+  li:nth-child(8)::before
+    background-image: url('images/icos.jpg')
+    @include icobk
+    background-position: -0px -94px
+    background-size: 224px
+
+
+
+
+@media #{$information-phone}
+  .list
+    margin-top: 0px
+  .titles
+    h2
+      font-size: 30px
+@media #{$information-tablets}
+  .titles
+    h2
+      font-size: 36px
+
+@media #{$information-desktop}
+
+@media #{information-desktop-lg}
+  .list
+    margin-top: 45px

@@ -1,0 +1,87 @@
+@import '../../assets/variables.sass'
+
+@mixin icobk
+  position: absolute
+  content: ""
+  width: 30px
+  height: 35px
+  left: 0px
+  background-repeat: no-repeat
+.nomargin
+  margin: 0
+  padding: 0
+.titles
+    padding: 42px 10px
+    text-align: center
+    background-color: $bar-black
+    h2
+      color: $color-white
+      font-size: 36px
+      font-weight: 700
+.amenities
+  .list
+    padding: 30px
+    max-width: 100%
+    .href-button
+      margin-top: 40px
+.list-designer
+  position: relative
+  li
+    list-style: none
+    display: block
+    margin-bottom: 15px
+    span
+      position: relative
+      top: 5px
+      font-size: 20px
+      font-weight: 300
+
+  li:nth-child(1)::before
+    background-image: url('images/icos3.jpg')
+    @include icobk
+    background-position: -115px 3px
+    background-size: 224px
+
+  li:nth-child(2)::before
+    background-image: url('images/icos3.jpg')
+    @include icobk
+    background-position: -119px -94px
+    background-size: 224px
+
+  li:nth-child(3)::before
+    background-image: url('images/icos3.jpg')
+    @include icobk
+    background-position: -80px -59px
+    background-size: 224px
+
+  li:nth-child(4)::before
+    background-image: url('images/icos3.jpg')
+    @include icobk
+    background-position: -42px -96px
+    background-size: 224px
+
+  li:nth-child(5)::before
+    background-image: url('images/icos3.jpg')
+    @include icobk
+    background-position: -153px -61px
+    background-size: 224px
+
+  li:nth-child(6)::before
+    background-image: url('images/icos3.jpg')
+    @include icobk
+    background-position: -122px -33px
+    background-size: 238px
+
+@media #{$information-phone}
+  .list
+    margin-top: 0px
+  .titles
+    h2
+      font-size: 30px
+@media #{$information-tablets}
+  .list
+  .titles
+    h2
+      font-size: 36px
+
+@media #{$information-desktop}

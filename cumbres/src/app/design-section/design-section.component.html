@@ -1,0 +1,41 @@
+<section class="design">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="titles">
+        <h2>ELEGANTE DISEÑO Y ACABADOS SUPERIORES</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-8 col-lg-8 col-xs-12 no-margin">
+          <owl-carousel id="design-carousel"
+               [options]="{items: 1, autoplay: true, mouseDrag: false ,loop:true, dots: true, navigation: true, animateOut: 'fadeOut', animateIn: 'fadeIn'}"
+               [class]="['owl-slide2']">
+               <div class="item" *ngFor="let img of images" >
+                 <img src="assets/images/slider/design/{{img}}" alt="Diseño elegante" class="img-responsive">
+               </div>
+           </owl-carousel>
+
+        </div>
+        <div class="col-md-4 col-lg-4 col-xs-12 no-margin">
+            <div class="list">
+                <ul class="list-designer">
+                  <li><span>Desde 51 m2</span></li>
+                  <li><span>2 Habitaciones</span></li>
+                  <li><span>Sala</span></li>
+                  <li><span>Comedor</span></li>
+                  <li><span>Cocina</span></li>
+                  <li><span>Baño</span></li>
+                  <li><span>Área de servicio</span></li>
+                  <li><span>Área de TV</span></li>
+                </ul>
+                <div class="href-button">
+                  <a href="#" class="btn btn-default btn-block">QUIERO VIVIR AQUÍ</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  </div>
+</section>

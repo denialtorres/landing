@@ -1,0 +1,45 @@
+<section class="amenities">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="titles">
+        <h2>EXCELENTE CALIDAD DE VIDA </h2>
+      </div>
+    </div>
+
+  </div>
+  <div class="container">
+
+     <div class="row">
+         <div class="col-md-8 col-lg-8 col-xs-12 nomargin">
+           <owl-carousel id="owl-slide3"
+                [options]="{items: 1, autoplay: true, mouseDrag: false ,loop:true, dots: false, navigation: false, animateOut: 'fadeOut', animateIn: 'fadeIn'}"
+                [class]="['owl-slide3']">
+                <!-- <div class="item" *ngFor="let img of images"  [ngStyle]="{background-image:/assets/images/slider/slider{{img}}.jpg;">
+                </div> -->
+                <div class="item" *ngFor="let img of images">
+                    <img src="assets/images/slider/amenities/{{img}}" alt="Diseño eleganteÁREAS VERDES Y AMENIDADES" class="img-responsive">
+                </div>
+            </owl-carousel>
+         </div>
+         <div class="col-md-4 col-lg-4 col-xs-12 nomargin">
+             <div class="list">
+                 <ul class="list-designer">
+                   <li><span>Roof garden en segunda planta  (sólo edén desde $1,099,000)</span></li>
+                   <li><span>Closet-Vestidor  (sólo edén desde $1,099,000)</span></li>
+                   <li><span>Zona fitness</span></li>
+                   <li><span>Social roof - grill</span></li>
+                   <li><span>Jogging</span></li>
+                   <li><span>Juegos infantiles</span></li>
+                 </ul>
+                 <div class="href-button">
+                   <a href="#" class="btn btn-default btn-block">QUIERO VIVIR AQUÍ</a>
+                 </div>
+             </div>
+         </div>
+
+     </div>
+
+  </div>
+
+
+ </section>

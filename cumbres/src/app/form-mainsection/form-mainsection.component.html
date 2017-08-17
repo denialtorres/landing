@@ -1,0 +1,48 @@
+<section class="contact">
+  <div class="container">
+    <div class="formdepa">
+      <form class="contact" [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)">
+        <div class="main-form" *ngIf=!emailSend>
+          <h3>tu depa desde</h3>
+          <h2>· $628,000 ·</h2>
+          <h3>¿Estás interesado?</h3>
+          <p>Déjanos tus datos y un asesor se comunicará contigo para darte todos los detalles.</p>
+          <div class="form-group">
+            <input type="text"  formControlName="name" placeholder="Nombre" class="form-control">
+            <div class="alert-validation" *ngIf="!rForm.controls['name'].valid && rForm.controls['name'].touched">{{ titleAlert }}</div>
+          </div>
+          <div class="form-group">
+            <input type="text" formControlName="telephone" placeholder="Número de teléfono o celular"  class="form-control" >
+            <div class="alert-validation" *ngIf="!rForm.controls['telephone'].valid && rForm.controls['telephone'].touched">{{ titleAlert }}</div>
+
+          </div>
+          <div class="form-group">
+            <input type="mail" formControlName="mail" placeholder="Correo electrónico"  class="form-control" >
+            <div class="alert-validation" *ngIf="!rForm.controls['mail'].valid && rForm.controls['mail'].touched">{{ mailAlert }}</div>
+          </div>
+          <div class="form-group">
+            <input type="text" formControlName="availability" placeholder="¿En qué horario te podemos llamar?"  class="form-control">
+            <div class="alert-validation" *ngIf="!rForm.controls['availability'].valid && rForm.controls['availability'].touched">{{ titleAlert }}</div>
+
+          </div>
+          <button type="submit" name="button" class="btn btn-primary btn-block" [disabled]="!rForm.valid">QUIERO QUE ME LLAMEN</button>
+
+        </div>
+        <div class="form-ok"  *ngIf=emailSend>
+            <div class="arrow" *ngIf=!sendfalse>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              <span>TUS DATOS SE HAN ENVIADO</span>
+              <p>¡Gracias! Mantente al tanto, uno de nuestros asesores se comunicará contigo a la brevedad.</p>
+            </div>
+            <div class="arrow2" *ngIf=sendfalse>
+              <i class="fa fa-times" aria-hidden="true"></i>
+              <span>ERROR EN ENVÍO</span>
+              <p>Parece que tus datos no se enviaron correctamente, verifica tu conexión e intenta nuevamente.</p>
+              <button type="button" name="button" class="btn-default btn-block" (click)="reSend()">REINTENTAR</button>
+            </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</section>
