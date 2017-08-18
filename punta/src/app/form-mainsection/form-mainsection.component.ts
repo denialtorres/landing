@@ -35,7 +35,7 @@ export class FormMainsectionComponent implements OnInit {
 //http://192.168.64.2/puntaaltaphp/response.php
   addPost(post) {
 
-    this.http.post('http://192.168.64.2/backend/do_contact.php',post)
+    this.http.post('do_contact.php',post)
         .subscribe(
             data => {
               let body = data.text()
