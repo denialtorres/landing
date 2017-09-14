@@ -25,7 +25,7 @@
             <div class="alert-validation" *ngIf="!rForm.controls['availability'].valid && rForm.controls['availability'].touched">{{ titleAlert }}</div>
 
           </div>
-          <button type="submit" name="button" class="btn btn-primary btn-block" [disabled]="!rForm.valid">QUIERO QUE ME LLAMEN</button>
+          <button type="submit" name="button" angularticsEvent="MoreInfo" angularticsCategory="ButtonForm" class="btn btn-primary btn-block" [disabled]="!rForm.valid">QUIERO QUE ME LLAMEN</button>
 
         </div>
         <div class="form-ok"  *ngIf=emailSend>
