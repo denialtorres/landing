@@ -4,7 +4,7 @@
       <form class="contact" [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)">
         <div class="main-form" *ngIf=!emailSend>
           <h3>tu depa desde</h3>
-          <h2>· $895,000 ·</h2>
+          <h2>· $940,000 ·</h2>
           <h3>¿Estás interesado?</h3>
           <p>Déjanos tus datos y un asesor se comunicará contigo para darte todos los detalles.</p>
           <div class="form-group">
@@ -25,7 +25,7 @@
             <div class="alert-validation" *ngIf="!rForm.controls['availability'].valid && rForm.controls['availability'].touched">{{ titleAlert }}</div>
 
           </div>
-          <button type="submit" name="button" class="btn btn-primary btn-block" [disabled]="!rForm.valid">QUIERO QUE ME LLAMEN</button>
+          <button type="submit" name="button" angulartics2On="click" angularticsEvent="MoreInfo" angularticsCategory="ButtonForm" class="btn btn-primary btn-block" [disabled]="!rForm.valid">QUIERO QUE ME LLAMEN</button>
 
         </div>
         <div class="form-ok"  *ngIf=emailSend>
@@ -33,6 +33,9 @@
               <i class="fa fa-check" aria-hidden="true"></i>
               <span>TUS DATOS SE HAN ENVIADO</span>
               <p>¡Gracias! Mantente al tanto, uno de nuestros asesores se comunicará contigo a la brevedad.</p>
+              <div style="display:inline;">
+                <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/836292589/?label=sbNYCNnVgnUQ7Z_jjgM&amp;guid=ON&amp;script=0"/>
+              </div>
             </div>
             <div class="arrow2" *ngIf=sendfalse>
               <i class="fa fa-times" aria-hidden="true"></i>
