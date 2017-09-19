@@ -17,10 +17,10 @@ import { FooterComponent } from './footer/footer.component';
 import { AmenitiesComponent } from './amenities/amenities.component';
 import { MoreInfoComponent } from './more-info/more-info.component';
 
+import { LandingComponent } from './landing/landing.component'
 
 const appRoutes: Routes = [
-  { path: '',   component: AppComponent },
-  { path: '**',   component: AppComponent }
+  { path: 'landing', component: LandingComponent}
 ];
 
 @NgModule({
@@ -33,7 +33,8 @@ const appRoutes: Routes = [
     LocationSectionComponent,
     FooterComponent,
     AmenitiesComponent,
-    MoreInfoComponent
+    MoreInfoComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
