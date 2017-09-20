@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Http } from '@angular/http';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-form-mainsection',
@@ -22,7 +24,7 @@ export class FormMainsectionComponent implements OnInit {
   titleAlert:string = 'El campo es requerido';
   mailAlert:string ="El formato de correo es incorrecto";
 
-  constructor(private fb: FormBuilder, private http: Http) {
+  constructor(private fb: FormBuilder, private http: Http, private router: Router) {
 
     this.rForm = fb.group({
       'name' : [null, Validators.required],
@@ -34,6 +36,10 @@ export class FormMainsectionComponent implements OnInit {
   }
 //http://192.168.64.2/puntaaltaphp/response.php
   addPost(post) {
+
+    //HERE IS WHERE YOU SEND TO THE THANK YOU PAGE
+    //AFTER CONTIDION TRUE
+    this.router.navigate(['./success']);
 
     this.http.post('do_contact.php',post)
         .subscribe(
