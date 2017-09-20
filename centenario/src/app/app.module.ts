@@ -21,7 +21,6 @@ import { HomeComponent } from './home/home.component'
 
 const appRoutes: Routes = [
     { path: '', component: HomeComponent },
-    { path: '**',   component: HomeComponent },
     { path: 'success', component: LandingComponent }
 ];
 
