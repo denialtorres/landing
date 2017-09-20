@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, Router } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpModule } from '@angular/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -16,11 +16,13 @@ import { LocationSectionComponent } from './location-section/location-section.co
 import { FooterComponent } from './footer/footer.component';
 import { AmenitiesComponent } from './amenities/amenities.component';
 import { MoreInfoComponent } from './more-info/more-info.component';
-
-import { LandingComponent } from './landing/landing.component'
+import { LandingComponent } from './landing/landing.component';
+import { HomeComponent } from './home/home.component'
 
 const appRoutes: Routes = [
-  { path: 'landing', component: LandingComponent}
+    { path: '', component: HomeComponent },
+    { path: '**',   component: HomeComponent },
+    { path: 'success', component: LandingComponent }
 ];
 
 @NgModule({
@@ -34,7 +36,8 @@ const appRoutes: Routes = [
     FooterComponent,
     AmenitiesComponent,
     MoreInfoComponent,
-    LandingComponent
+    LandingComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +47,7 @@ const appRoutes: Routes = [
     OwlModule,
     ReactiveFormsModule,
     RouterModule.forRoot(appRoutes,{ enableTracing: false }),
+    RouterModule.forChild(appRoutes),
     Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ])
   ],
   providers: [],
